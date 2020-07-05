@@ -9,7 +9,7 @@ const ViewSong = (props) => {
     const [errorMessage, setErrorMessage] = useState("")
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/songs/${props.id}`)
+        axios.get(`http://localhost:3000/songs/${props.songId}`)
             .then(res => {
                 setIsLoading(false)
                 setSong(res.data)

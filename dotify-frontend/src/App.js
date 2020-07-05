@@ -8,7 +8,7 @@ const App = () => {
     return (
         <div>
             <BrowserRouter>
-                <Route path="/" component={ViewSongs} />
+                <Route exact path="/" component={ViewSongs} />
                 <Route exact path="/songs/:id" render={props => <ViewSong songId={props.match.params.id}/>} />
             </BrowserRouter>
 
