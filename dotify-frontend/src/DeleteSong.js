@@ -5,7 +5,6 @@ const DeleteSong = ({songId, onDelete}) => {
 
     function deleteSong(){
         axios.delete(`http://localhost:3000/songs/${songId}`)
-            .then(onDelete)
     }
 
     return (
