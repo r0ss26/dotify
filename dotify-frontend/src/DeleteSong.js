@@ -8,7 +8,7 @@ const DeleteSong = ({songId, onDelete}) => {
     }
 
     return (
-        <button onClick={deleteSong}>X</button>
+        <button onClick={onDelete}>X</button>
     )
 }
 
